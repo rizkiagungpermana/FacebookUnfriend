@@ -22,14 +22,14 @@ function unfriend($id, $token){
     $result = curl_exec($ch);
     curl_close($ch);
 	if($result == true){
-		$unf = Console::green('[UNFRIENDED]');
+		$unf = Console::green('[Unfriend Sukses]');
 	} else {
-		$unf = Console::red('[FAILED TO UNFRIEND]');
+		$unf = Console::red('[Gagal Diunfirend]');
 	}
 	return $unf;
 }
 
-echo Console::blue("     Facebook Auto Unfriend\n");
+echo Console::blue("     Facebook Auto Unfriender\n");
 echo Console::blue("        Inactive Users\n\n");
 
 //INPUT
